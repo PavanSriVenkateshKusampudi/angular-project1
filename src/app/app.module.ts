@@ -22,6 +22,7 @@ import{ MatDividerModule} from '@angular/material/divider';
 import{ MatListModule} from '@angular/material/list';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
+import { FormDirective } from './form.directive';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { AboutComponent } from './about/about.component';
     HomeComponent,
     DetailComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    FormDirective
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import{FormGroup,FormBuilder} from '@angular/forms'
+import{FormGroup,FormBuilder, Validators} from '@angular/forms'
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,7 +11,12 @@ import { Router } from '@angular/router';
 export class SigninComponent implements OnInit {
   public loginForm ! : FormGroup
 
-  constructor(private formBuilder : FormBuilder,private http : HttpClient, private router : Router) { }
+  constructor(private formBuilder : FormBuilder,private http : HttpClient, private router : Router) {
+    this.loginForm = this.formBuilder.group({
+      email:['',Validators.required],
+      password:['',Validators.required]
+    });
+   }
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
@@ -20,7 +25,9 @@ export class SigninComponent implements OnInit {
     })
   }
   login(){
-    this.router.navigate(['dashboard'])
+    if(this.loginForm.valid){
+      alert(this.loginForm.value.login);
+    }
 
   }
 
