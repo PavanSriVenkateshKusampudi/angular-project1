@@ -1,0 +1,63 @@
+.page{
+    
+    padding: 0 1rem;
+    background: #6087ad;
+}
+h2{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a.social{
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    margin: 0 10px;
+    border: #fff solid 2px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    
+}
+a.social::before{
+    content: '';
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    transition: 0.5s all ease-in-out;
+}
+a.social:hover::before{
+    top: 0;
+}
+a.social.facebook::before{
+    background-color: goldenrod;
+}
+a.social.Instagram::before{
+    background-color: brown;
+}
+a.social.mail::before{
+    background-color: burlywood;
+}
+a.social svg{
+    width: 100px;
+    height: 100px;
+    transition: 0.5s all ease-in-out;
+}
+a.social svg path{
+    fill: #383838;
+    transition: 0.5s all ease-in-out;
+}
+a.social:hover svg path{
+    fill: #fff;
+}
