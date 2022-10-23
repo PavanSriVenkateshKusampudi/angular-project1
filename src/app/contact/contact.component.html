@@ -1,10 +1,16 @@
-<div class="container-fluid page">
-    <div style="text-align:center ;"><h1>Contact</h1></div><br><br>
-  </div>
-      <div >
-         <h2 >It is a Contact page</h2>
-      </div>
-      <div>
-          <p></p>
-      </div>
-    
+<section id="contact">
+	<div class="sectionheader">	<h1>CONTACT</h1></div>
+	<article>
+	<p>It is a contact page . From here you can send us a message.</p>
+		
+			<label for="checkcontact" class="contactbutton"><div class="mail"></div></label><input id="checkcontact" type="checkbox">
+	
+			<form action="" method="post" class="contactform">
+				<p class="input_wrapper"><input type="text" name="contact_nom" value=""  id ="contact_nom"><label for="contact_nom">NAME</label></p>
+				<p class="input_wrapper"><input type="text" name="contact_email" value=""  id ="contact_email"><label for="contact_email">EMAIL</label></p>
+				<p class="input_wrapper"><input type="text" name="contact_sujet" value=""  id ="contact_sujet"><label for="contact_sujet">SUBJECT</label></p>
+				<p class="textarea_wrapper"><textarea name="contact_message" id="contact_message"></textarea></p>
+				<p class="submit_wrapper"><input type="submit" value="Submit"></p>			
+			</form>
+	</article>
+</section>

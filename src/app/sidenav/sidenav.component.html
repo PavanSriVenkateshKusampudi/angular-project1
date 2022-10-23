@@ -5,9 +5,10 @@
     <mat-divider></mat-divider>
     <h2 matSubheader class="mt-2">applications</h2>
     <a mat-list-item routerLink="/home" routerLinkActive="list-item=active"><mat-icon>home</mat-icon>Home</a>
-    <a mat-list-item routerLink="/detail" routerLinkActive="list-item=active"><mat-icon>detail</mat-icon>Detail</a>
+    
     <a mat-list-item routerLink="/about" routerLinkActive="list-item=active"><mat-icon>about</mat-icon>About</a>
     <a mat-list-item routerLink="/contact" routerLinkActive="list-item=active"><mat-icon>contact</mat-icon>Contact</a><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
     <a mat-list-item routerLink="/signin" routerLinkActive="list-item=active"><mat-icon>logout</mat-icon>LogOut</a>
+    <router-outlet></router-outlet>
     
 </mat-nav-list>
